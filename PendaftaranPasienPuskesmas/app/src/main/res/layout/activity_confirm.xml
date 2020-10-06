@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirm">
+
+    <TextView
+        android:id="@+id/cekDataDiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cek Ulang Data Diri Anda"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="109dp"
+        android:text="@string/nik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/nama_lengkap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nik" />
+
+    <TextView
+        android:id="@+id/jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/jenis_kelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <TextView
+        android:id="@+id/tglLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tanggal_lahir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jk" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/alamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tglLahir" />
+
+    <TextView
+        android:id="@+id/bpjs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="No BPJS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+    <TextView
+        android:id="@+id/kunjungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tanggal_kunjungan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpjs" />
+
+    <TextView
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equals2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals" />
+
+    <TextView
+        android:id="@+id/equals3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals2" />
+
+    <TextView
+        android:id="@+id/equals4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals3" />
+
+    <TextView
+        android:id="@+id/equals5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals4" />
+
+    <TextView
+        android:id="@+id/equals6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals5" />
+
+    <TextView
+        android:id="@+id/equals7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/equals"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/equals6" />
+
+    <TextView
+        android:id="@+id/confirmNik"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@+id/equals"
+        app:layout_constraintTop_toBottomOf="@+id/cekDataDiri" />
+
+    <TextView
+        android:id="@+id/confirmNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmNik"
+        app:layout_constraintTop_toBottomOf="@+id/confirmNik" />
+
+    <TextView
+        android:id="@+id/confirmJk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmNama"
+        app:layout_constraintTop_toBottomOf="@+id/confirmNama" />
+
+    <TextView
+        android:id="@+id/confirmLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmJk"
+        app:layout_constraintTop_toBottomOf="@+id/confirmJk" />
+
+    <TextView
+        android:id="@+id/confirmAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmLahir"
+        app:layout_constraintTop_toBottomOf="@+id/confirmLahir" />
+
+    <TextView
+        android:id="@+id/confirmBpjs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/confirmAlamat" />
+
+    <TextView
+        android:id="@+id/confirmKunjungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/confirmBpjs"
+        app:layout_constraintTop_toBottomOf="@+id/confirmBpjs" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:text="Konfirmasi"
+        android:onClick="confirm"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="364dp"
+        android:text="Reset"
+        android:onClick="reset"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toEndOf="@+id/confirm"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

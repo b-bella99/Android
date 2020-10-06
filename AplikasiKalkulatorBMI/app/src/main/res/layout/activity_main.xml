@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pilihGender"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pilihMale"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="Laki-Laki"
+            android:textColor="@drawable/radio_flat_text_selector"/>
+
+        <RadioButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pilihFemale"
+            android:gravity="center"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="Perempuan"
+            android:textColor="@drawable/radio_flat_text_selector"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="@string/label_bobot"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_Tinggi"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="224dp"
+        android:gravity="center_horizontal"
+        android:text="@string/height"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_Umur"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="372dp"
+        android:gravity="center_horizontal"
+        android:text="@string/labelUmur"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/tambahBerat"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:onClick="tmbBerat"
+        android:text="@string/logo_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputBerat"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:text="0"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kurangBerat"
+        app:layout_constraintStart_toEndOf="@+id/kurangBerat"
+        app:layout_constraintTop_toTopOf="@+id/kurangBerat"
+        app:layout_constraintVertical_bias="0.428"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/kurangBerat"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="152dp"
+        android:onClick="krgBerat"
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tambahTinggi"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="308dp"
+        android:onClick="tmbTinggi"
+        android:text="@string/logo_plus"
+        app:layout_constraintStart_toStartOf="@+id/tambahBerat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputTinggi"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:text="0"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kurangTinggi"
+        app:layout_constraintStart_toEndOf="@+id/kurangTinggi"
+        app:layout_constraintTop_toTopOf="@+id/kurangTinggi"
+        app:layout_constraintVertical_bias="0.428"/>
+
+    <Button
+        android:id="@+id/kurangTinggi"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="308dp"
+        android:onClick="krgTinggi"
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tambahUmur"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="428dp"
+        android:onClick="tmbUmur"
+        android:text="@string/logo_plus"
+        app:layout_constraintStart_toStartOf="@+id/tambahTinggi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputUmur"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:text="0"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kurangUmur"
+        app:layout_constraintStart_toEndOf="@+id/kurangUmur"
+        app:layout_constraintTop_toTopOf="@+id/kurangUmur"
+        app:layout_constraintVertical_bias="0.428"/>
+
+    <Button
+        android:id="@+id/kurangUmur"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="428dp"
+        android:onClick="krgUmur"
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calc"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="504dp"
+        android:onClick="calculatorBMI"
+        android:text="@string/calculateBMI"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>-->
+
+</RelativeLayout>
